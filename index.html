@@ -7,6 +7,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/clipboard.css" /
 	</head>
 	<body class="is-preload">
 
@@ -18,15 +19,14 @@
 						<div class="inner">
 
 							<!-- Header -->
-								<!--header id="header">
+								<header id="header">
 									<a href="index.html" class="logo"><strong>Portfolio</strong> by Eric Ji</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                        <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									</ul>
-								</header-->
+										<li><a href="https://www.instagram.com/therealegman/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/ericji2004/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									</ul-->
+								</header>
 
 							<!-- Banner: About me-->
 								<section id="banner">
@@ -164,18 +164,15 @@
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
-                                        <!--li><a href="index.html">About Me</a></li>
-                                        <li>
+                                        <li><a href="aboutMe.html">About Me</a></li>
+                                        <!--li>
 											<span class="opener">Programming</span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
 											</ul>
-										</li>
-                                        <li><a href="index.html">Artificial Intelligence</a></li>
-                                        <li><a href="index.html">Design</a></li>
+										</li-->
+                                        <li><a href="graphicDesign.html">Graphic Design</a></li>
+                                        <!--li><a href="index.html">Design</a></li>
                                         <li><a href="index.html">3D Modeling</a></li>
 										<li><a href="generic.html">Generic</a></li>
 										<li><a href="elements.html">Elements</a></li-->
@@ -207,20 +204,29 @@
 								</section-->
 
 							<!-- Section: contacts -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>I'm always looking for new experiances and opportunities! If you're interested in having me be part of your team, feel free to reach out!</p>
-									<ul class="contact">
-										<!--li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li-->
-										<li class="icon brands fa-discord">Thatoneasianguy#1894</li>
-                                        <li class="icon brands fa-instagram"><a href="https://www.instagram.com/therealegman/">@therealegman</a></li>
-                                        <li class="icon brands fa-linkedin"><a href="">Eric Ji</li>
-										<!--li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li-->
-									</ul>
-								</section>
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>I'm always looking for new experiances and opportunities! If you're interested in having me be part of your team, feel free to reach out!</p>
+                                <ul class="contact">
+                                    <!--li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li-->
+                                    <li onclick="copyToClipboard()" class="icon brands fa-discord tooltip">
+                                        Thatoneasianguy#1894
+                                        <span class="tooltiptext">Click to copy Discord ID</span>
+                                    </li>
+
+                                    <li class="icon brands fa-instagram">
+                                        <a href="https://www.instagram.com/therealegman/" target="_blank">@therealegman</a>
+                                    </li>
+                                    
+                                    <li class="icon brands fa-linkedin">
+                                        <a href="https://www.linkedin.com/in/ericji2004/" target="_blank">Eric Ji</a>
+                                    </li>
+                                            <!--li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+                                    Nashville, TN 00000-0000</li-->
+                                </ul>
+                            </section>
 
 							<!-- Footer -->
 								<footer id="footer">
@@ -238,6 +244,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/clipboard.js"></script>
 
 	</body>
 </html>
